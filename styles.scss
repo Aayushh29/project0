@@ -1,0 +1,106 @@
+
+/* SCSS Variables */
+$primary-color: #333;
+$secondary-color: #444;
+$highlight-color: #ff9800;
+$text-color: #fff;
+
+/* Mixin for Reusability */
+@mixin mobile-only {
+    @media (max-width: 600px) {
+        @content;
+    }
+}
+
+/* Base Card Style for Inheritance */
+.base-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+/* Universal Selector */
+* {
+    font-family: Arial, sans-serif;
+}
+
+/* Element Selector */
+body {
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: $primary-color;
+    color: $text-color;
+    padding: 1rem 0;
+
+    h1 {
+        margin: 0;
+    }
+}
+
+/* Navigation */
+nav {
+    ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        background: $secondary-color;
+
+        li {
+            margin: 0 15px;
+
+            a {
+                text-decoration: none;
+                color: $text-color;
+                font-weight: bold;
+                padding: 0.5rem;
+
+                &:hover {
+                    color: $highlight-color;
+                }
+            }
+        }
+    }
+
+    @include mobile-only {
+        ul {
+            flex-direction: column;
+        }
+
+        ul li {
+            margin: 10px 0;
+        }
+    }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: $primary-color;
+    color: $text-color;
+    margin-top: 2rem;
+}
+
+/* Lists */
+ul {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+/* ID Selector */
+#highlight {
+    background-color: $highlight-color;
+    color: $text-color;
+    padding: 10px;
+}
+
+/* Class Selector with Inheritance */
+.card {
+    @extend .base-card;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}

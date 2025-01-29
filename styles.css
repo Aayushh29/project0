@@ -1,0 +1,85 @@
+/* SCSS Variables */
+/* Mixin for Reusability */
+/* Base Card Style for Inheritance */
+.base-card, .card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+/* Universal Selector */
+* {
+  font-family: Arial, sans-serif;
+}
+
+/* Element Selector */
+body {
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: #333;
+  color: #fff;
+  padding: 1rem 0;
+}
+header h1 {
+  margin: 0;
+}
+
+/* Navigation */
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background: #444;
+}
+nav ul li {
+  margin: 0 15px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+nav ul li a:hover {
+  color: #ff9800;
+}
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+  nav ul li {
+    margin: 10px 0;
+  }
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #333;
+  color: #fff;
+  margin-top: 2rem;
+}
+
+/* Lists */
+ul {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+/* ID Selector */
+#highlight {
+  background-color: #ff9800;
+  color: #fff;
+  padding: 10px;
+}
+
+/* Class Selector with Inheritance */
+.card {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}/*# sourceMappingURL=styles.css.map */
