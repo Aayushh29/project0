@@ -16,16 +16,20 @@ Project0 is a responsive multi-page website designed using **Bootstrap 4, SCSS, 
    - Provides a **detailed historical overview** of the Taj Mahal.
    - Implements a **highlight section (`#highlight`)** for emphasis.
    - Uses **Bootstrap cards** to enhance content presentation.
+   - Citation: [Centre, U. W. H. (n.d.). *Taj Mahal*. UNESCO World Heritage Centre.](https://whc.unesco.org/en/list/252/)
 
 3. **`gallery.html`** - **Gallery Page**
    - Features a **responsive image grid** implemented using Bootstrap’s grid system (`col-md-4 col-sm-6 col-12`).
    - Includes sample images from the "images" folder.
    - Ensures all images are **fluid (`img-fluid`)** to maintain responsiveness.
+   - Citation: [Google. (n.d.). *Taj Mahal: A tour from the top - Google Arts & Culture*. Google.](https://artsandculture.google.com/story/taj-mahal-a-tour-from-the-top/zAUxtGbI2DyODQ?hl=en)
+   - Citation: [Kriangkrai Thitimakorn. (n.d.). *27,583 Taj Mahal Stock Photos, High-Res Pictures, and Images - Getty Images.*](https://www.gettyimages.ca/photos/taj-mahal)
 
 4. **`contact.html`** - **Contact Page**
    - Displays **contact details** in a structured table format.
    - Uses **Bootstrap utilities** for responsive design.
    - Includes an **email link (`mailto:`)** and phone number section.
+   - Citation: [Contact Us. (n.d.). *Taj Mahal Official Website*.](https://www.tajmahal.gov.in/contact-us.aspx)
 
 ### CSS & SCSS Files
 
