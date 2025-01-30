@@ -82,4 +82,40 @@ ul {
 /* Class Selector with Inheritance */
 .card {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Table */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1rem 0;
+  /* Group selector */
+  /* Pseudo Selector */
+}
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+table th {
+  background: #f4f4f4;
+  text-align: left;
+}
+table tr:nth-child(even) {
+  background: #f9f9f9;
+}
+table tr:hover {
+  background: #ddd;
+}
+@media (max-width: 600px) {
+  table th, table td {
+    font-size: 0.9rem;
+  }
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0.5rem 0;
 }/*# sourceMappingURL=styles.css.map */

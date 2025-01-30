@@ -104,3 +104,44 @@ ul {
     @extend .base-card;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
+
+/* Table */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1rem 0;
+
+    /* Group selector */
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+
+    th {
+        background: #f4f4f4;
+        text-align: left;
+    }
+
+    tr:nth-child(even) {
+        background: #f9f9f9;
+    }
+
+    /* Pseudo Selector */
+    tr:hover {
+        background: #ddd;
+    }
+
+    @include mobile-only {
+        th, td {
+            font-size: 0.9rem;
+        }
+    }
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0.5rem 0;
+}
